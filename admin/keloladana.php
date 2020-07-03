@@ -97,7 +97,7 @@
 									<th>Jenis Belanja</th>
 									<th>Anggaran Belanja</th>
 									<th>Tahun Anggaran</th>
-									<th></th>
+									<th></th><th></th>
 								</tr>
 								</thead>
 								<tbody>

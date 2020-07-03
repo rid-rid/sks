@@ -1,3 +1,4 @@
+<?php require_once('login/hak_akses.php');?>
 <?php require_once('head.php');?>
     <div class="site-wrap" id="home-section">
       <div class="site-mobile-menu site-navbar-target">
@@ -120,6 +121,11 @@
 												$kode =  sprintf("%03s", $noUrut);
 												$nomorbaru = $kode.$nomor; ?>
 												<input type="text" class="form-control round-form" placeholder="Masukkan No Surat" value="<?php echo $nomorbaru ?>" name ="no_surat" readonly required>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-10">
+												<input type="hidden" class="form-control round-form" name="input_nama" value="<?php echo $_SESSION ['nama']; ?>" required>
 											</div>
 										</div>
 										<div class="form-group row">

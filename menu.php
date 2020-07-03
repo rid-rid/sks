@@ -7,64 +7,42 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
+		<table width="100%" border="0">
+		  <tr>
+			<td width="33%">
               <a href="usaha.php">
-                <img src="images/img_1.jpg" alt="Image"
+                <img src="images/usaha.png" alt="Image"
                  class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                <h2><a href="usaha.php">Surat Keterangan Usaha</a></h2>
-              </div>
-            </div>
-          </div>
-		  <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="skck.php">
-                <img src="images/img_1.jpg" alt="Image"
+              </a></td>
+			<td width="34%"><a href="skck.php">
+                <img src="images/skck.png" alt="Image"
                  class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                <h2><a href="skck.php">Surat Pengantar SKCK</a></h2>
-              </div>
-            </div>
-          </div>
-		  <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="ktps.php">
-                <img src="images/img_1.jpg" alt="Image"
+              </a></td>
+			<td width="33%"><a href="ktps.php">
+                <img src="images/ktps.png" alt="Image"
                  class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                <h2><a href="ktps.php">Surat Keterangan KTP Sementara</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="penghasilan.php">
-                <img src="images/img_1.jpg" alt="Image"
+              </a></td>
+		  </tr>
+		  <tr>
+			<td align="center"><h2><a href="usaha.php">Surat Keterangan Usaha</a></h2></td>
+			<td align="center"><h2><a href="skck.php">Surat Pengantar SKCK</a></h2></td>
+			<td align="center"><h2><a href="ktps.php">Surat Keterangan KTP Sementara</a></h2></td>
+		  </tr>
+		  <tr>
+			<td><a href="penghasilan.php">
+                <img src="images/penghasilan.png" alt="Image"
                  class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                <h2><a href="penghasilan.php">Surat Keterangan Penghasilan</a></h2>
-              </div>
-            </div>
-          </div>
-		  <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="imunisasi.php">
-                <img src="images/img_1.jpg" alt="Image"
+              </a></td>
+			<td> <a href="imunisasi.php">
+                <img src="images/imunisasi.png" alt="Image"
                  class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                <h2><a href="imunisasi.php">Surat Imunisasi</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
+              </a></td>
+			<td rowspan="2">&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td align="center"><h2><a href="penghasilan.php">Surat Keterangan Penghasilan</a></h2></td>
+			<td align="center"><h2><a href="imunisasi.php">Surat Imunisasi</a></h2></td>
+		  </tr>
+		</table>
       </div>
     </div>

@@ -71,6 +71,7 @@
 									<th><i class=" fa fa-check"></i> NIK Istri</th>
 									<th><i class=" fa fa-star-half-o"></i> Nama Istri</th>
 									<th><i class=" fa fa-key"></i> No. Surat</th>
+									<th><i class=" fa fa-key"></i> Nama Yang Input</th>
 									<th></th>
 								</tr>
 								</thead>
@@ -90,6 +91,7 @@
 									<td><?php echo "$r[nik_i]"; ?></td>
 									<td><?php echo "$r[nama_i]"; ?></td>
 									<td><?php echo "$r[no_surat]"; ?></td>
+									<td><?php echo "$r[input_nama]"; ?></td>
 									<td>
 										<a href="cetak/surat_imunisasi.php?cetak=<?php echo $r['id']; ?>" target='_blank'><button class="btn btn-success btn-xs"><i class="fa fa-print"></i></button></a>
 										<a href="proses/hapus/imunisasi.php?del=<?php echo $r['id']; ?>" onClick="return confirm('Apakah Ingin Menghapus Data')"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>

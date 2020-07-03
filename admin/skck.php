@@ -71,6 +71,7 @@
 									<th><i class=" fa fa-check"></i> Jenis Kelamin</th>
 									<th><i class=" fa fa-star-half-o"></i> Alamat Lengkap</th>
 									<th><i class=" fa fa-key"></i> No. Surat</th>
+									<th><i class=" fa fa-key"></i> Nama Yang Input</th>
 									<th></th>
 								</tr>
 								</thead>
@@ -90,6 +91,7 @@
 									<td><?php echo "$r[jenkel]"; ?></td>
 									<td><?php echo "$r[alamat] RT.$r[rt]/RW.$r[rw] "; ?></td>
 									<td><?php echo "$r[no_surat]"; ?></td>
+									<td><?php echo "$r[input_nama]"; ?></td>
 									<td>
 										<a href="cetak/surat_skck.php?cetak=<?php echo $r['id']; ?>" target='_blank'><button class="btn btn-success btn-xs"><i class="fa fa-print"></i></button></a>
 										<a href="proses/hapus/skck.php?del=<?php echo $r['id']; ?>"onClick="return confirm('Apakah Ingin Menghapus Data')"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>

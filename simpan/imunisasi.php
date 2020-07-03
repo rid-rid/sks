@@ -20,7 +20,7 @@ $nama_s=$_POST['nama_s'];
 $nik_i=$_POST['nik_i'];
 $nama_i=$_POST['nama_i'];
 $no_surat=$_POST['no_surat'];
-$input_nama= "percobaan input";
+$input_nama= $_POST['input_nama'];
 $tanggal= date("Y-m-d");
 //simpan dan buat query
 $perintah = "INSERT INTO imunisasi (nik_s,nama_s,nik_i,nama_i,no_surat,input_nama,tanggal) VALUES ('$nik_s','$nama_s','$nik_i','$nama_i','$no_surat','$input_nama','$tanggal')";

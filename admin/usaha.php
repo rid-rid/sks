@@ -72,7 +72,8 @@
 									<th><i class=" fa fa-star-half-o"></i> Alamat Lengkap</th>
 									<th><i class=" fa fa-info"></i> Nama Usaha</th>
 									<th><i class=" fa fa-key"></i> No. Surat</th>
-									<th></th>
+									<th><i class=" fa fa-key"></i> Nama Yang Input</th>
+									<th></th><th></th>
 								</tr>
 								</thead>
 								<tbody>
@@ -92,6 +93,7 @@
 									<td><?php echo "$r[alamat] RT.$r[rt]/RW.$r[rw] "; ?></td>
 									<td><?php echo "$r[usaha]"; ?></td>
 									<td><?php echo "$r[no_surat]"; ?></td>
+									<td><?php echo "$r[input_nama]"; ?></td>
 									<td>
 										<a href="cetak/surat_usaha.php?cetak=<?php echo $r['id']; ?>" target='_blank'><button class="btn btn-success btn-xs"><i class="fa fa-print"></i></button></a>
 										<a href="edit/usaha.php?edit=<?php echo $r['nik']; ?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>

@@ -22,7 +22,7 @@ $nama_an=$_POST['nama_an'];
 $nominal=$_POST['nominal'];
 $penulisan=$_POST['penulisan'];
 $no_surat=$_POST['no_surat'];
-$input_nama= "percobaan input";
+$input_nama= "Admin Desa";
 $tanggal= date("Y-m-d");
 //simpan dan buat query
 $perintah = "INSERT INTO penghasilan (nik_ay,nama_ay,nik_an,nama_an,nominal,penulisan,no_surat,input_nama,tanggal) VALUES ('$nik_ay','$nama_ay','$nik_an','$nama_an','$nominal','$penulisan','$no_surat','$input_nama','$tanggal')";

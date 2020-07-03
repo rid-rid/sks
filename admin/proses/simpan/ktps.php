@@ -28,7 +28,7 @@ $rt=$_POST['rt'];
 $rw=$_POST['rw'];
 $keperluan=$_POST['keperluan'];
 $no_surat=$_POST['no_surat'];
-$input_nama= "percobaan input";
+$input_nama= "Admin Desa";
 $tanggal= date("Y-m-d");
 //simpan dan buat query
 $perintah = "INSERT INTO ktps (nik,nama,tempat,tgl,jenkel,agama,stts,pekerjaan,alamat,rt,rw,keperluan,no_surat,input_nama,tanggal) VALUES ('$nik','$nama','$tempat','$tgl','$jenkel','$agama','$stts','$pekerjaan','$alamat','$rt','$rw','$keperluan','$no_surat','$input_nama','$tanggal')";

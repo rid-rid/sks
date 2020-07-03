@@ -12,39 +12,32 @@ $r_i= mysql_fetch_assoc($query);
 
             <div class="col-3 ">
               <div class="site-logo">
-                <a href="index.php" class="font-weight-bold">DESA TAMBAN JAYA</a>
+                <a href="index.php" class="font-weight-bold">TAMBAN JAYA</a>
               </div>
             </div>
 
-            <div class="col-9  text-right">
-              
-
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
-
-              
-
+            <div class="col-9  text-right">       
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                   <li><a href="index.php" class="nav-link">Beranda</a></li>
                   <li><a href="profil.php" class="nav-link">Profil</a></li>
-                  <li><a href="logout.php" class="nav-link">Keluar</a></li>
+                  <li><a href="login/logout.php" class="nav-link">Keluar</a></li>
                 </ul>
               </nav>
             </div>
-
-            
+			
           </div>
         </div>
 
       </header>
 
     <div class="ftco-blocks-cover-1">
-      <div class="site-section-cover overlay" style="background-image: url('images/hero_1.jpg')">
+      <div class="site-section-cover overlay" style="background-image: url('images/bg.jpeg')">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-7">
-              <p>Selamat Datang User</p>
-              <h1 class="mb-3 text-primary">Selamat Datang Aplikasi Pelayanan Desa</h1>
+			<br></br>
+              <h1 class="mb-3 text-primary">Selamat Datang <font color=red><?php echo $_SESSION ['nama']; ?></font> Di Aplikasi Pelayanan Desa</h1>
               <p>Aplikasi Ini Akan Memudahkan Anda Untuk Mendapatkan Pelayanan Pembuatan Surat Yang Terdapat Pada Desa Temban Jaya Kec. Tamban Catur Kab. Kapuas</p>
 			  <p><marquee behavior="alternate" direction="right"><h3><font color='red'><strong><b>NEW INFORMATION</b></strong></font></h3></p><p><?= htmlspecialchars_decode(htmlspecialchars_decode($r_i['teks'])); ?></marquee></p>
             </div>

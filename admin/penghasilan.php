@@ -73,7 +73,8 @@
 									<th><i class=" fa fa-info"></i> Nominal</th>
 									<th><i class=" fa fa-key"></i> Penulisan</th>
 									<th><i class=" fa fa-key"></i> No. Surat</th>
-									<th></th>
+									<th><i class=" fa fa-key"></i> Nama Yang Input</th>
+									<td colspan="2"></td>
 								</tr>
 								</thead>
 								<tbody>
@@ -94,6 +95,7 @@
 									<td><?php echo "$r[nominal]"; ?></td>
 									<td><?php echo "$r[penulisan] Rupiah"; ?></td>
 									<td><?php echo "$r[no_surat]"; ?></td>
+									<td><?php echo "$r[input_nama]"; ?></td>
 									<td>
 										<a href="cetak/surat_penghasilan.php?cetak=<?php echo $r['id']; ?>" target='_blank'><button class="btn btn-success btn-xs"><i class="fa fa-print"></i></button></a>
 										<a href="edit/penghasilan.php?edit=<?php echo $r['id']; ?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>

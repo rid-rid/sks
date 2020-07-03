@@ -27,7 +27,7 @@ $alamat=$_POST['alamat'];
 $rt=$_POST['rt'];
 $rw=$_POST['rw'];
 $no_surat=$_POST['no_surat'];
-$input_nama= "percobaan input";
+$input_nama= "Admin Desa";
 $tanggal= date("Y-m-d");
 //simpan dan buat query
 $perintah = "INSERT INTO skck (nik,nama,tempat,tgl,jenkel,agama,stts,pekerjaan,alamat,rt,rw,no_surat,input_nama,tanggal) VALUES ('$nik','$nama','$tempat','$tgl','$jenkel','$agama','$stts','$pekerjaan','$alamat','$rt','$rw','$no_surat','$input_nama','$tanggal')";

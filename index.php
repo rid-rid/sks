@@ -1,3 +1,4 @@
+<?php require_once('login/hak_akses.php');?>
 <?php require_once('head.php');?>
     <div class="site-wrap" id="home-section">
       <div class="site-mobile-menu site-navbar-target">
