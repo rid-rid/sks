@@ -69,7 +69,7 @@
               </div>
             </div>
             <!--/showback -->
-            <div class="form-panel">
+            <div class="showback">
               <!-- Button Input Belanja -->
               <a href="input/belanja.php"><button type="button" class="btn btn-theme03 btn-lg btn-block"><i class="fa fa-plus"></i>Tambah Data Belanja<i class="fa fa-plus"></i></button></a>
               <!-- End Button Input Belanja -->
@@ -77,7 +77,7 @@
 
             <!-- Start Content -->
             <div class="row mb">
-              <div class="content-panel">
+              <div class="form-panel">
                 <div class="adv-table">
                   <?php
                   mysql_select_db($database_koneksi, $koneksi);
