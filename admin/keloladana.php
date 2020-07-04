@@ -2,6 +2,7 @@
 <?php require_once('hak_akses.php'); ?>
 <?php $page = "kelola_dana"; ?>
 <?php $sub = "data"; ?>
+<?php $tahun_belanja = $_POST['thn_belanja']; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,7 +78,7 @@
                   <!-- End Button Input Belanja -->
                 </div>
                 <div class="btn-group">
-                  <a href="cetak/belanja.php"><button type="button" class="btn btn-theme"><i class="fa fa-print"></i> Cetak Laporan</button></a>
+                  <a href="cetak/cetak_pendapatan_belanja.php?tahun=<?= $tahun_belanja ?>" target="_blank"><button type="button" class="btn btn-theme"><i class="fa fa-print"></i> Cetak Laporan</button></a>
                 </div>
               </div>
             </div>
@@ -88,7 +89,6 @@
                 <div class="adv-table">
                   <?php
                   mysql_select_db($database_koneksi, $koneksi);
-                  $tahun_belanja = $_POST['thn_belanja'];
                   $tampilrt = "SELECT * FROM v_total_belanja WHERE thn_belanja='$tahun_belanja'";
                   $queryrt = mysql_query($tampilrt, $koneksi) or die(mysql_error());
                   $rt = mysql_fetch_assoc($queryrt);

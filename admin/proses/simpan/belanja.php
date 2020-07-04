@@ -23,7 +23,7 @@ $sumber = $_POST['kd_sumber'];
 //simpan dan buat query
 $perintah = "INSERT INTO trans_belanja (besar_belanja,thn_belanja,kd_sumber,kd_sub_rekening,kd_belanja) VALUES ('$besar_belanja','$thn_belanja','$sumber','$sub_rekening','$jenis_belanja')";
 
-echo $perintah;
+//echo $perintah;
 
 $queryy = @mysql_query($perintah, $koneksi);
 
