@@ -30,5 +30,5 @@ $queryy = @mysql_query($perintah, $koneksi);
 if (!$queryy) {
   echo "Gagal menyimpan:" . mysql_error();
 } else {
-  echo ' <script language="javascript">window.location.href="../../imunisasi.php";</script>';
+  echo '<script language="javascript">window.location.href="../../imunisasi.php";</script>';
 }
