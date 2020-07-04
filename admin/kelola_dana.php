@@ -67,9 +67,9 @@
                       <?php
                       mysql_connect("localhost", "root", "");
                       mysql_select_db("db_tamban_jaya");
-                      $query = mysql_query("select thn_pendapatan from trans_pendapatan group by thn_pendapatan");
+                      $query = mysql_query("select * from tahun order by nama_tahun");
                       while ($row = mysql_fetch_array($query)) {
-                        echo '<option name="thn_belanja"  value="' . $row['thn_pendapatan'] . '">' . $row['thn_pendapatan'] . '		</option>';
+                        echo '<option name="thn_belanja"  value="' . $row['nama_tahun'] . '">' . $row['nama_tahun'] . '		</option>';
                       }
                       ?>
                     </select>

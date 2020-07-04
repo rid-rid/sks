@@ -61,18 +61,25 @@
               <h4> KELOLA MASTER DATA </h4>
               <div class="btn-group btn-group-justified">
                 <div class="btn-group">
-                  <a href="input/rekening.php"><button type="button" class="btn btn-theme02"><i class="fa fa-bars">REKENING</i></button></a>
+                  <a href="input/rekening.php"><button type="button" class="btn btn-theme02"><i class="fa fa-bars"> REKENING</i></button></a>
                 </div>
                 <div class="btn-group">
-                  <a href="input/sub_rekening.php"><button type="button" class="btn btn-theme"><i class="fa fa-align-justify">SUB REKENING</i></button></a>
+                  <a href="input/sub_rekening.php"><button type="button" class="btn btn-theme"><i class="fa fa-align-justify"> SUB REKENING</i></button></a>
                 </div>
               </div>
             </div>
             <!--/showback -->
             <div class="showback">
-              <!-- Button Input Belanja -->
-              <a href="input/belanja.php"><button type="button" class="btn btn-theme03 btn-lg btn-block"><i class="fa fa-plus"></i>Tambah Data Belanja<i class="fa fa-plus"></i></button></a>
-              <!-- End Button Input Belanja -->
+              <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                  <!-- Button Input Belanja -->
+                  <a href="input/belanja.php"><button type="button" class="btn btn-theme02"><i class="fa fa-plus"></i> Tambah Data Belanja</button></a>
+                  <!-- End Button Input Belanja -->
+                </div>
+                <div class="btn-group">
+                  <a href="cetak/belanja.php"><button type="button" class="btn btn-theme"><i class="fa fa-print"></i> Cetak Laporan</button></a>
+                </div>
+              </div>
             </div>
 
             <!-- Start Content -->
@@ -113,7 +120,7 @@
 										INNER JOIN bidang ON rekening.kd_bidang = bidang.kd_bidang
 										INNER JOIN belanja ON trans_belanja.kd_belanja = belanja.kd_belanja
 										INNER JOIN sumber ON trans_belanja.kd_sumber = sumber.kd_sumber WHERE trans_belanja.thn_belanja='$tahun_belanja'
-										ORDER BY trans_belanja.thn_belanja AND bidang.nama_bidang ASC ";
+										ORDER BY sub_rekening.kd_sub_rekening ASC ";
                       $query = mysql_query($tampil, $koneksi) or die(mysql_error());
                       $r = mysql_fetch_assoc($query);
                       $no = 1;

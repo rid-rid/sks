@@ -23,40 +23,12 @@
 	<!-- Custom styles for this template -->
 	<link href="../css/style.css" rel="stylesheet">
 	<link href="../css/style-responsive.css" rel="stylesheet">
-	<!-- Css and JS Autocomplete -->
-	<link href="../lib/autocomplete/jquery-ui.css" rel="stylesheet">
-	<script type="text/javascript" src="../lib/autocomplete/jquery-1.12.4.js"></script>
-	<script type="text/javascript" src="../lib/autocomplete/jquery-ui.js"></script>
 	<!-- =======================================================
     Template Name: Dashio
     Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
     Author: TemplateMag.com
 	License: https://templatemag.com/license/
 	======================================================= -->
-	<script type="text/javascript">
-		$(function() {
-			var data = "autocomplete_sub_rekening.php";
-			$("#nama_sub_rekening").autocomplete({
-				source: data
-			});
-		});
-	</script>
-	<script type="text/javascript">
-		$(function() {
-			var data = "autocomplete_jenis_belanja.php";
-			$("#jenis_belanja").autocomplete({
-				source: data
-			});
-		});
-	</script>
-	<script type="text/javascript">
-		$(function() {
-			var data = "autocomplete_thn_anggaran.php";
-			$("#thn_belanja").autocomplete({
-				source: data
-			});
-		});
-	</script>
 </head>
 
 <body>
@@ -90,7 +62,7 @@
 										<div class="form-group">
 											<label class="col-sm-2 col-sm-2 control-label" for="nama_sub_rekening">Nama Belanja </label>
 											<div class="col-sm-10">
-												<select class="form-control cmbbox" name="nama_sub_rekening" id="nama_sub_rekening" required>
+												<select class="form-control cmbbox" name="sub_rekening" id="sub_rekening" required>
 													<option value="">- Pilih Nama Belanja -</option>
 													<?php
 													mysql_select_db($database_koneksi, $koneksi);
@@ -128,7 +100,17 @@
 										<div class="form-group">
 											<label class="col-sm-2 col-sm-2 control-label" for="thn_anggaran">Tahun Belanja</label>
 											<div class="col-sm-10">
-												<input type="text" class="form-control" placeholder="Masukkan Tahun Anggaran" name="thn_belanja" id="thn_belanja" required>
+												<select class="form-control cmbbox" name="thn_belanja" id="thn_belanja" required>
+													<option value="">- Pilih Tahun Belanja -</option>
+													<?php
+													mysql_select_db($database_koneksi, $koneksi);
+													$tampil = "SELECT * FROM tahun ORDER BY nama_tahun ASC";
+													$query = mysql_query($tampil, $koneksi) or die(mysql_error());
+													$r = mysql_fetch_assoc($query);
+													do { ?>
+														<option value="<?= $r['nama_tahun']; ?>"><?= $r['nama_tahun']; ?></option>
+													<?php } while ($r = mysql_fetch_assoc($query)); ?>
+												</select>
 											</div>
 										</div>
 										<div class="form-group">
@@ -170,30 +152,16 @@
 	<script src="../lib/jquery.ui.touch-punch.min.js"></script>
 	<script class="include" type="text/javascript" src="../lib/jquery.dcjqaccordion.2.7.js"></script>
 	<script src="../lib/jquery.scrollTo.min.js"></script>
-	<script src="../lib/jquery.nicescroll.js"></script>
-	<script src="../lib/select2/select2.min.js"></script>
+	<script src="../lib/jquery.nicescroll.js" type="text/javascript"></script>
 	<!--common script for all pages-->
 	<script src="../lib/common-scripts.js"></script>
 	<!--custom checkbox & radio-->
-	<script src="../lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-	<script src="../lib/bootstrap-daterangepicker/date.js"></script>
-	<script src="../lib/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<script src="../lib/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
-	<script src="../lib/form-component.js"></script>
-
+	<script src="../lib/select2/select2.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			$('.cmbbox').select2();
 		});
 	</script>
-
 </body>
 
 </html>
-<script type="text/javascript">
-	<?php echo $jsArrayy; ?>
-
-	function changeValuePENDAPATAN(x) {
-		document.getElementById('nama').value = prdPENDAPATAN[x].nama;
-	};
-</script>
