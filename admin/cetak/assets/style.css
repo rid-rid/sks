@@ -1,0 +1,85 @@
+img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 20px;
+}
+
+table tr td {
+    vertical-align: top;
+    text-align: left;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 70px;
+    margin-top: 0px;
+    text-align: justify;
+
+}
+
+.tengah {
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.border {
+    width: 85%;
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 75px;
+}
+
+.tbdata {
+    margin-left: 50px;
+}
+
+.isi {
+    width: 450px;
+    text-align: justify;
+}
+
+table.tbisi {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 15px;
+}
+
+table.tbisi tbody tr td {
+    border: 0px solid black;
+    border-left: 0.5px;
+    border-right: 0.5px;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+table.tbisi thead tr td {
+    text-align: center;
+    font-weight: bold;
+    border: 0.5px solid black;
+    position: relative;
+    padding: 3px;
+}
+
+table.tbisi tfoot tr td {
+    border-top: 0.5px;
+}
+
+table.tbketerangan {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+table.tbketerangan thead tr td {
+    font-weight: bold;
+}
+
+table.tbketerangan tr td {
+    position: relative;
+    padding: 3px;
+}

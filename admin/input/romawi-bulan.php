@@ -39,4 +39,3 @@ function getRomawi($bln){
                         break;
                 }
 }
-?>

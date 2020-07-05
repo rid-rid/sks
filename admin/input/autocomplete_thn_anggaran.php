@@ -13,4 +13,3 @@ while ($row = $query->fetch_assoc()) {
     $data[] = $row['thn_pendapatan'];
 }
 echo json_encode($data);
-?>

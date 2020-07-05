@@ -11,4 +11,3 @@ unset($_SESSION['MM_UserGroup']);
 if ($logoutGoTo != "") {header("Location: $logoutGoTo");
 exit;
 }
-?>
